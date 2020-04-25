@@ -1,10 +1,10 @@
 TeamMates
 
-Shiva Kumar Murarishetti - 16296890 - smpf4@mail.umkc.edu
+Shiva Kumar Murarishetti
 
-Lavanya Gadde - 16298160 - lavanya.gadde@mail.umkc.edu
+Lavanya Gadde
 
-Sravani Garikapati - 16296889 - sg324@mail.umkc.edu
+Sravani Garikapati
 
 Procedure:
 
