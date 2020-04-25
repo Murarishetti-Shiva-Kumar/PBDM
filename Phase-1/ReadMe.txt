@@ -1,6 +1,5 @@
-TeamMates
+TeamMates:
 
-<<<<<<< HEAD
 Shiva Kumar Murarishetti
 
 Lavanya Gadde
@@ -8,7 +7,6 @@ Lavanya Gadde
 Sravani Garikapati
 
 =======
->>>>>>> c5988229becff02639330f0b43d69b2872ba1972
 Procedure:
 
 1. Hadoop Installation
