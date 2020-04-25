@@ -1,11 +1,5 @@
 TeamMates
 
-Shiva Kumar Murarishetti - 16296890 - smpf4@mail.umkc.edu
-
-Lavanya Gadde - 16298160 - lavanya.gadde@mail.umkc.edu
-
-Sravani Garikapati - 16296889 - sg324@mail.umkc.edu
-
 Procedure:
 
 1. Hadoop Installation
