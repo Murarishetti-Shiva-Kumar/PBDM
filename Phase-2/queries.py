@@ -25,7 +25,7 @@ entities = df.select("entities.*")
 entities.createOrReplaceTempView("entity")
 retweeted = df.select("retweeted_status.*")
 retweeted.createOrReplaceTempView("user_retweeted")
-retweeted.printSchema()
+# retweeted.printSchema()
 
 # Query1
 # Query to fetch geo coordinates such as latitude & longitude of user
@@ -61,7 +61,7 @@ def get_query2():
     query_2 = spark.sql(
         "select name, followers_count from user where name is not null and verified=='true' order by followers_count DESC LIMIT 20")
     pd = query_2.toPandas()
-    pd.to_csv('Query8.csv', index=False)
+    pd.to_csv('Query2.csv', index=False)
     pd.plot.pie(y="followers_count", labels=pd.name.tolist(), autopct='%1.2f%%',shadow=False, legend=False, fontsize=8)
     plt.title("Followers Count of verified Users")
     plt.axis('equal')
