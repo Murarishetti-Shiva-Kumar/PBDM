@@ -236,7 +236,7 @@ def get_query8():
     query_8 = spark.sql(
         "select count(*) as TweetCount,SUBSTR(user.created_at,0,10) as TWEETDATE from tweets where created_at IS not null GROUP BY user.created_at ORDER BY TweetCount DESC LIMIT 30")
     pd = query_8.toPandas()
-    pd.to_csv('Query5.csv', index=False)
+    pd.to_csv('Query8.csv', index=False)
     y = pd.TweetCount.tolist()
     x = pd.TWEETDATE.tolist()
     plt.plot(x, y, alpha=0.5)
