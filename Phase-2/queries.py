@@ -53,6 +53,7 @@ def get_query1():
     return graph1
 
 # Query2
+# Query to fetch top 20 highest followers count of verified users
 def get_query2():
     plt.clf()
     # os.remove("Query2.csv")
