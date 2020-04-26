@@ -53,7 +53,6 @@ def get_query1():
     return graph1
 
 # Query2
-# # Query to fetch top 20 highest followers count of verified users
 def get_query2():
     plt.clf()
     # os.remove("Query2.csv")
@@ -100,7 +99,7 @@ def get_query3():
     return graph3
 
 # Query4
-# # Query to fetch top 20 trending hashtags
+# Query to fetch top 20 trending hashtags
 def get_query4():
     plt.clf()
     # os.remove("Query4.csv")
@@ -269,7 +268,6 @@ def get_query9():
     p = plt.gcf()
     p.gca().add_artist(my_circle)
     plt.title("User's Profile Background")
-    # pd.plot.bar()
     plt.axis('equal')
     plt.tight_layout()
     # plt.show()
@@ -342,8 +340,6 @@ def get_query12():
         "select sum(geo_count) as geo_count,geo_enabled from (select count(*) as geo_count,geo_enabled from user where geo_enabled is not null group by geo_enabled union select count(*) as geo_count,user.geo_enabled as geo_enabled from user_retweeted where user.geo_enabled is not null group by user.geo_enabled) group by geo_enabled")
     pd = query_12.toPandas()
     pd.to_csv('Query12.csv', index=False)
-    # pd.set_index("geo_enabled", drop=True, inplace=True)
-    # pd.plot.bar()
     pd.plot.pie(y="geo_count", labels=pd.geo_enabled.tolist(), autopct='%1.2f%%', fontsize=10)
     my_circle = plt.Circle((0, 0), 0.5, color='white')
     p = plt.gcf()
@@ -428,9 +424,7 @@ def get_query15():
     pd = query_15.toPandas()
     pd.to_csv("Query15.csv", index=False)
     pd.plot.pie(y="FollowersCount", labels=pd.Name.tolist(), autopct='%1.2f%%', shadow=False, legend=False, fontsize=8)
-    # plt.bar(x=pd.Name.tolist(), height=pd.FollowersCount.tolist())
     plt.title("Accounts With More Followers Count Based on Location")
-    plt.xticks(rotation=45, ha="right")
     plt.axis('equal')
     plt.tight_layout()
     # plt.show()
